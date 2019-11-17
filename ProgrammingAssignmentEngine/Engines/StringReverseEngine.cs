@@ -5,7 +5,7 @@ namespace ProgrammingAssignmentEngine
 {
     public interface IStringReverseEngine
     {
-        void StringReverse(string input);
+        string StringReverse(string input);
         void DisplayPrime(string result);
     }
     public class StringReverseEngine : IStringReverseEngine
@@ -15,7 +15,7 @@ namespace ProgrammingAssignmentEngine
         {
             _logger = logger;
         }
-        public void StringReverse(string input)
+        public string StringReverse(string input)
         {
             char[] strAsCharArray = input.ToCharArray();
             char[] result = new char[strAsCharArray.Length];
@@ -24,6 +24,7 @@ namespace ProgrammingAssignmentEngine
                 result[i] = strAsCharArray[strAsCharArray.Length - i - 1];
             string stringResult = new string(result);
             Console.WriteLine(stringResult);
+            return stringResult;
         }
         public void DisplayPrime(string result)
         {
