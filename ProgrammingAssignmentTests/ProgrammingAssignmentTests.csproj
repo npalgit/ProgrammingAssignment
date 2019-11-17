@@ -79,6 +79,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Engine\PrimeNumberGeneratorEngineTests.cs" />
+    <Compile Include="Engine\StringReverseEngineTests.cs" />
     <Compile Include="Extentions\ExtentionHelperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
